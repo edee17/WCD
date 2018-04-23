@@ -1,0 +1,16 @@
+h1 {
+    color:navy;
+    background-color: lightblue;
+    text-align: center;
+}
+.addr{
+    background-color: lightblue;
+    color: navy;
+    text-align: right;
+}
+#hp {
+    color: maroon;
+}
+/* id = '#'
+class = '.'
+*/
