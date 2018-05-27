@@ -1,0 +1,249 @@
+article, body, div, footer, header, h1, h2, p, {
+    border: 0;
+    padding: 0;
+    margin: 0;
+ }
+
+/* .container {
+     margin: 0 auto;
+     position: relative;
+ }*/
+
+ /*Background color of the body*/
+body {
+    background-color: #156e5d;
+}
+
+/*Select all elements and align in the sidebar*/
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+/*Align elements in the sidebar*/
+#sidebar {
+    position: fixed;
+    width: 200px;
+    height: 100%;
+    background: #2d3e50;
+    left: -200px;
+    transition: all 500ms linear;
+    text-align: center;
+}
+
+/*To allow sidebar in active page to slide in and out*/
+#sidebar.active{
+    left: 0;
+}
+
+/*To allow sidebar in active page to slide in and out*/
+#sidebar ul li {
+    color: red;
+    list-style: none;
+    padding: 10px 10px;
+    border-bottom: 1px solid rgba(100, 100, 100, 0.3);
+}
+
+/*The design for the sitenav words*/
+ul.sitenav a:link {
+    text-decoration: none;
+    color: white;
+}
+
+/*The design for the sitenav words after it has been clicked*/
+ul.sitenav a:visited{
+    color: #1bbc9b;
+}
+
+/*The design for the sitenav words while hovering*/
+ul.sitenav a:hover{
+    color: red;
+}
+
+/*The design for the sitenav words while focusing*/
+ul.sitenav a:focus{
+    color: purple;
+}
+
+/*For the 3 lines of the sidebar to appear*/
+#sidebar .toggle-btn{
+    position: absolute;
+    left: 230px;
+    top: 20px;
+}
+
+/*Styling for the span*/
+#sidebar .toggle-btn span {
+    display: block;
+    width: 30px;
+    height: 5px;
+    background: #2d3e50;
+    margin: 5px 0;
+}
+
+/*Styling for the article*/
+header {
+    /*padding-left: 300px;*/
+    padding-top: 20px;
+    text-align: center;
+}
+
+/*Styling for the h1*/
+h1 {
+    font-size: 30pt;
+}
+
+/*Styling for the current selected box*/
+.current {
+    background-color: black;
+}
+
+/*Styling for the image in the index page*/
+.potrait {
+    margin-left: 25px;
+    max-width: 50%;
+    padding-right: 50px;
+    border-right: 3px solid black;
+}
+
+/*Styling for the footer*/
+footer {
+    background-color: #2d3e50;
+    text-align: center;
+    color: white;
+}
+
+/*Styling for all the header in all 3 pages*/
+#mainabout {
+    max-width: 736px;
+}
+
+/*Styling for Header*/
+.main header {
+    font-style: italic; 
+}
+
+/*.bodyabout {
+    border-style: solid;
+    margin: 0px 270px;
+    background-color: grey;
+}*/
+
+/*Styling for the the elements inside the border for all 3 pages*/
+.allbody {
+   
+    margin: 0 270px;
+    background-color: lightgray;
+    max-width: 736px;
+}
+
+/*Styling for the h2 in the About page*/
+.h2about {
+    margin-left: 25px;
+}
+
+/*Styling the h2 in about page*/
+.h2about h2 {
+    margin-bottom: 5px;
+}
+
+/*Styling the h2about div in the about page*/
+#h2about {
+    padding-bottom: 10px;
+    border-bottom: 3px solid black;
+    margin: 0 30px;
+}
+
+/*Styling for the image in the Contact page*/
+.contact {
+    margin-left: 25px;
+}
+
+/*To create a line between the contact information and map in Conatct page*/
+.contactimg {
+    margin-left: 25px;
+    max-width: 40%;
+    padding-right: 30px;
+    border-right: 3px solid black;
+}
+
+/*Styling for slideshow*/
+.slideshow {
+    margin: 0;
+    padding-bottom: 5px;
+}
+
+/*Styling the h2 in Slideshow*/
+.slideshow h2 {
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+/*Styling the image inside the Slideshow class*/
+.slideshow img {
+    border: 2px solid black;
+}
+
+/*social media icons*/
+#socialmed {
+    margin-left: 25px;
+}
+
+/*social media icons for portfolio page*/
+#socialmed2 {
+    text-align: center;
+}
+
+/*Styling for map*/
+.map {
+    float: right;
+}
+
+/*Styling for map alignment*/
+.contact iframe {
+    margin-left: 50px;
+}
+
+/*Styling for aside*/
+aside {
+    float: right;
+    text-align: center;
+    width: 30%;
+    margin-right: 30px;
+    padding-top: 150px;
+}
+
+/*Styling the Slideshow*/
+#slideshow2 {
+    padding-bottom: 5px;
+}
+
+/*Styling of image in Slideshow*/
+.mySlides {
+    margin: 0 auto;
+}
+
+/*Styling the div in all pages*/
+#aboutsize {
+    width: 735.5px;
+}
+
+/*Styling the figure*/
+figure{
+    margin-left: 180px;
+}
+
+/*Styling the li in ul which is in h2about class*/
+.h2about ul li{
+    margin-left: 20px;
+}
+
+/*Styling for p in slideshow2*/
+#slideshow2 p {
+    text-align: center;
+    padding-top: 5px;
+}
+
+
+

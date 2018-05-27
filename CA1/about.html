@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Muhd Muqtasidin</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <link rel="shortcut icon" href="images/icon_ScG_icon.ico">
+    <script src="sidebar.js"></script>
+</head>
+<body>
+    <div id="sidebar">
+        <div class="toggle-btn" onclick="toggleSidebar()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+            <ul class="sitenav">
+                    <a href="index.html"><img src="images/Logo3(turquoise&background).png" height="200px" width="200px"></a>
+                    <li><a href="index.html"><img src="images/home.png" height="50px" width="50px"></br>Home</a></li>
+                    <li class="current"><a href="about.html"><img src="images/about.png" height="50" width="50"></br>About</a></li>
+                    <li><a href="portfolio.html"><img src="images/portfolio2.png" height="50px" width="50px"></br>Portfolio</a></li>
+                    <li><a href="contact.html"><img src="images/contact2.png" height="50px" width="50"></br>Contact</a></li>
+            </ul>
+    </div>
+
+    <div class="allbody" id="aboutsize">
+        <div id="mainabout" class="main">
+            <header>
+                <h1>Muhd Muqtasidin Bin Ahmad Eunos</h1>
+            </header>   
+        </div>
+    </br>
+
+    
+
+    
+
+        <div class="h2about" id="h2about">
+            <h2>
+                MY HOBBY
+            </h2>
+            <ul>
+                <li>
+                    Football, where I will spend my time to release stress and have fun while keeping my body fit and healthy.
+                </li>
+            </ul>
+        </br>
+            <h2>
+                INTERESTS
+            </h2>
+            <ul>
+                <li>
+                    I love to spend my time coding and designing websites as that is where I feel I could express my creativeness.
+                </li>
+            </ul>
+        </br>
+            <h2>
+                ACHIEVEMENTS
+            </h2>
+            <ul>
+                <li>
+                    Director List Award while in ITE.
+                </li>
+            </ul>
+        </br>
+            <ul>
+                <li>
+                    Edusave Merit Bursary.
+                </li>
+            </ul>
+        </br>
+            <ul>
+                <li>
+                    Book Prize For Student Potential.
+                </li>
+            </ul>
+        </br>
+            <ul>
+                <li>
+                    Edusave Certificate of Academic Achievement
+                </li>
+            </ul>
+        </div>
+
+    </br>
+
+        <div id="slideshow2" class="slideshow">
+            <h2>AWARDS</h2>
+            <img class="mySlides" src="images/achievements/IMG_20180525_0001.jpg" width="400px" height="500px">
+            <img class="mySlides" src="images/achievements/IMG_20180525_0002.jpg" width="400px" height="500px">
+            <img class="mySlides" src="images/achievements/IMG_20180525_0003.jpg" width="400px" height="500px">
+            <img class="mySlides" src="images/achievements/IMG_20180525_0004.jpg" width="400px" height="500px">
+         </div>
+
+        <script>
+            var myIndex = 0;
+            carousel();
+            
+            function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";  
+            }
+            myIndex++;
+            if (myIndex > x.length) {myIndex = 1}    
+            x[myIndex-1].style.display = "block";  
+            setTimeout(carousel, 2000);
+        }
+        </script>
+
+        <div class="container">
+
+        </div>
+        <footer>
+            &copy;Muhd Muqtasidin
+            <h5>Please do visit my social media pages:</h5>
+            <p><a href="https://www.facebook.com/wayne.muqtasidin" target="_blank"><img src="images/socialmediaicons/fb.png" width="20px" height="20px" alt="Facebook"></a>
+            <a href="https://twitter.com/muhdmuqtasidin" target="_blank"><img src="images/socialmediaicons/twitter.png" width="20px" height="20px" alt="Instagram"></a>
+            <a href="https://www.instagram.com/muhd_muqtasidin/?hl=en" target="_blank"><img src="images/socialmediaicons/instagram.png" width="20px" height="20px" alt="Twitter"></a></p>
+        </footer>
+    </div>
+</body>
+</html>

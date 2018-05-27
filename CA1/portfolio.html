@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Muhd Muqtasidin</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <link rel="shortcut icon" href="images/icon_ScG_icon.ico">
+    <script src="sidebar.js"></script>
+</head>
+<body>
+    <div id="sidebar">
+        <div class="toggle-btn" onclick="toggleSidebar()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+            <ul class="sitenav">
+                    <a href="index.html"><img src="images/Logo3(turquoise&background).png" height="200px" width="200px"></a>
+                    <li><a href="index.html"><img src="images/home.png" height="50px" width="50px"></br>Home</a></li>
+                    <li><a href="about.html"><img src="images/about.png" height="50" width="50"></br>About</a></li>
+                    <li class="current"><a href="portfolio.html"><img src="images/portfolio2.png" height="50px" width="50px"></br>Portfolio</a></li>
+                    <li><a href="contact.html"><img src="images/contact2.png" height="50px" width="50"></br>Contact</a></li>
+            </ul>
+    </div>
+
+    <div class="allbody">
+            <div id="mainabout" class="main">
+                <header>
+                    <h1>My Portfolio</h1>
+                </header>   
+            </div>
+        </br>
+            <div id="slideshow2" class="slideshow">
+                    <img class="mySlides" src="images/slideshowimages/index.png" width="400px" height="400px" alt="Index Page">
+                    <img class="mySlides" src="images/slideshowimages/booking.png" width="400px" height="400px" alt="Booking">
+                    <img class="mySlides" src="images/slideshowimages/info.png" width="400px" height="400px" alt="Information">
+                    <img class="mySlides" src="images/slideshowimages/gallery.png" width="400px" height="400px" alt="Gallery Page">
+                    <img class="mySlides" src="images/slideshowimages/aboutus.png" width="400px" height="400px" alt="AboutUs Page">
+                    <img class="mySlides" src="images/slideshowimages/contact.png" width="400px" height="400px" alt="Conatct Page">
+                    <p>During my last year in ITE, my group and I were tasked to create a website for people to book their preferred 
+                        holiday package. We were given a timeframe of 2 weeks to complete it. So, to make the task easier, we divide 
+                        the task into 4 as we have 4 members. I was tasked to create an animation of the countries available as can 
+                        be seen at the top of every pages.</p>
+
+                    </figure>
+            </div>
+                        
+                    <script>
+                        var myIndex = 0;
+                        carousel();
+                        
+                        function carousel() {
+                        var i;
+                        var x = document.getElementsByClassName("mySlides");
+                        for (i = 0; i < x.length; i++) {
+                            x[i].style.display = "none";  
+                        }
+                        myIndex++;
+                        if (myIndex > x.length) {myIndex = 1}    
+                        x[myIndex-1].style.display = "block";  
+                        setTimeout(carousel, 2000);
+                    }
+                    </script>
+                
+                <footer>
+                    &copy;Muhd Muqtasidin
+                    <h5>Please do visit my social media pages:</h5>
+                    <p><a href="https://www.facebook.com/wayne.muqtasidin" target="_blank"><img src="images/socialmediaicons/fb.png" width="20px" height="20px" alt="Facebook"></a>
+                    <a href="https://twitter.com/muhdmuqtasidin" target="_blank"><img src="images/socialmediaicons/twitter.png" width="20px" height="20px" alt="Instagram"></a>
+                    <a href="https://www.instagram.com/muhd_muqtasidin/?hl=en" target="_blank"><img src="images/socialmediaicons/instagram.png" width="20px" height="20px" alt="Twitter"></a></p>
+                </footer>
+        </div>
+</body>
+</html>
