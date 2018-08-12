@@ -1,0 +1,728 @@
+article, body, div, footer, header, h1, h2, nav, p {
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+body,html {
+    height: 100%;
+    margin: 0;
+}
+
+/* body and page container */
+body div.container {
+  max-width: 75%;
+  margin: 0.8% auto;
+  background-color: #66fcf1;
+  box-shadow: 0 10px 20px -5px #777;
+}
+  
+/* headings */
+header {
+  padding: 0.5em;
+  text-align: center;
+  background-color: #45a29e;
+}
+ 
+/* main content */
+article {
+  width: 50%;
+  padding: 3%;
+  margin-bottom: 4%;
+  float: left;
+  background-color: #66fcf1;
+  border-right: 3px solid black;
+}
+
+article div.container {
+  padding: 3% 0 2% 0;
+  background-color: white;
+}
+article h2 {
+  margin-bottom: 0.4em;
+}
+article p {
+  margin: 0 0 0.8em 1em;
+}
+  
+article p:first-child {
+  font-weight: bold;
+}
+
+aside {
+  background-color: #66fcf1;
+  padding: 3%;
+  margin-left: 58%;
+  margin-top: 15%;
+  text-align: center;
+}
+  
+aside h1 {
+  margin-bottom: 5%;
+}
+
+aside p {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 15pt;
+}
+
+.myname {
+  margin: 5%;
+  text-align: center;
+}
+
+.myPortfolio {
+  margin: 5%;
+  text-align: center;
+}
+
+#myImage {
+  max-width: 100%;
+}
+
+/*Styling the h2 in about page*/
+.h2about h2 {
+  margin-bottom: 5px;
+}
+
+/*Styling the h2about div in the about page*/
+#h2about {
+  text-align: center;
+  padding-bottom: 2%;
+  border-bottom: 3px solid black;
+  margin: 0 30px;
+}
+
+.contact {
+  text-align: center;
+  align-content: center;
+  padding-bottom: 5%;
+  border-bottom: 3px solid black;
+  margin: 0 30px;
+}
+
+.contactname {
+  text-align: center;
+}
+
+/*To create a line between the contact information and map in Conatct page*/
+.contactimg {
+  max-width: 40%;
+  padding-right: 30px;
+  border-right: 3px solid black;
+}
+
+/*Styling for map*/
+.map {
+  float: right;
+}
+
+/*Styling for map alignment*/
+.contact iframe {
+  margin-left: 50px;
+}
+
+/*Style for background image*/
+.bg {
+  background-image: url(Images/Background/Background3.jpg);
+  background-color: #1f2833;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  position: sticky;
+}
+
+.header1 {
+  background-color: #1f2833;
+  color: #1f2833;
+}
+
+.header {
+  margin: 7%  24%;
+  background-color: #45a29e;
+  text-align: center;
+  color: white;
+}
+
+/*Styling for slideshow*/
+.slideshow {
+  margin: 2% 0 0 0;
+  padding-bottom: 5px;
+}
+
+/*Styling the h2 in Slideshow*/
+.slideshow h2 {
+  text-align: center;
+  margin-bottom: 2%;
+}
+
+/*Styling the image inside the Slideshow class*/
+.slideshow img {
+  border: 2px solid black;
+}
+
+/* footer section */
+footer {
+  color: white;
+  padding: 0.5em;
+  margin-top: 2%;
+  clear: both;
+  text-align: center;
+  background-color: black;
+}  
+
+/* submitform */
+.containerSubmit h2 {
+  text-align: center;
+}
+
+.containerSubmit {
+  background-color: lightgrey;
+}
+
+.containerSubmit p {
+  text-align: center;
+}
+
+/* Form */
+* {
+  box-sizing: border-box;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+  /* font size buttons */
+.buttons {
+  position: absolute;
+  color: black;
+  background-color: #ab8d3f; 
+}
+.buttons p {
+  padding: 0 0.2em;
+  display: inline-block;
+  cursor: pointer;
+}
+.smaller-size {
+  font-size: 14px;
+}
+.larger-size {
+  font-size: 20px;
+}
+.selected-button {
+  background-color: white;
+  color: black;
+}
+ 
+#selected-button {
+  font-size: 17px;
+}
+
+ /* Loader */
+ /* Center the loader */
+#loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 150px;
+  height: 150px;
+  margin: -75px 0 0 -75px;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #66fcf1;
+  border-bottom: 16px solid #45a29e;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+  
+/* Add animation to "page content" */
+.animate-bottom {
+  position: relative;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+  
+@keyframes animatebottom { 
+  from{ bottom:-100px; opacity:0 } 
+  to{ bottom:0; opacity:1 }
+}
+  
+#myDiv {
+  display: none;
+  text-align: center;
+}
+
+
+#aImage:hover {
+  opacity: 0.7;
+}
+#aImage2:hover {
+  opacity: 0.7;
+}
+#aImage3:hover {
+  opacity: 0.7;
+}
+#aImage4:hover {
+  opacity: 0.7;
+}
+#aImage5:hover {
+  opacity: 0.7;
+}
+#aImage6:hover {
+  opacity: 0.7;
+}
+
+.mySlides{
+  max-width: 100%;
+}
+
+/* The Modal (background) */
+.mySlideshow2 {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.slideshow-content {
+  margin: auto;
+  display: block;
+  width: 25%;
+  /* max-width: 700px; */
+}
+
+/* Add Animation */
+.slideshow-content {    
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover, .close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#panel, #flip {
+  padding: 5px;
+  text-align: center;
+  background-color: #b7ae58;
+  border: solid 1px #c3c3c3;
+}
+
+#panel {
+  padding: 50px;
+  display: none;
+}
+
+#panel1, #flip1 {
+  padding: 5px;
+  text-align: center;
+  background-color: #b7ae58;
+  border: solid 1px #c3c3c3;
+}
+
+#panel1 {
+  padding: 50px;
+  display: none;
+}
+
+#panel2, #flip2 {
+  padding: 5px;
+  text-align: center;
+  background-color: #b7ae58;
+  border: solid 1px #c3c3c3;
+}
+
+#panel2 {
+  padding: 50px;
+  display: none;
+}
+
+/*Sitemap*/
+.sitemap {
+  background-color: black;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.sitemap:hover, .sitemap:focus {
+  background-color: #3e8e41;
+}
+
+.dropdown {
+  float: right;
+  position: relative;
+}
+
+.sitemap-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  right: 0;
+  z-index: 1;
+}
+
+.sitemap-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {
+  background-color: #ddd;
+}
+
+.show {
+  display: block;
+}
+
+i {
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+.down {
+  transform: rotate(45deg);
+}
+
+/*Portfolio*/
+.mySlidesPortfolio {
+  max-width: 100%;
+}
+
+/* Slideshow container */
+.portfolioSlideshow {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: black;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+  margin-left: 16%;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.dots {
+  text-align:center;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+.myPortfolioSlides {
+  display: none;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #ab8d3f;
+}
+
+.topnav a {
+  display: inline-block;
+  margin: 0.5em;
+  font-size: 25px;
+  font-family: 'Times New Roman', Times, serif;
+  font-style: italic;
+  font-weight: bold;
+  color: #f2f2f2;
+  padding: 14px 16px;
+  text-decoration: none;
+  text-align: center;
+}
+
+a:visited {
+  color: #514d25;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+.topnav2 {
+  display: none;
+}
+
+@media screen and (max-width: 640px) {
+  .topnav a:not(:first-child) {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+
+  .topnav2 a:not(:first-child) {
+    display: none;
+  }
+  .topnav2 a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .topnav.responsive {
+    position: relative;
+  }
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+  .topnav2 {
+    overflow: hidden;
+    background-color: #ab8d3f;
+    display: block;
+  }
+
+  #longn {
+    display: inline-block;
+    margin: auto;
+    margin-top: 9%;
+  }
+  
+  .topnav2 a {
+    display: inline-block;
+    margin: 0.5em;
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-weight: bold;
+    color: #f2f2f2;
+    padding: 14px 16px;
+    text-decoration: none;
+    text-align: center;
+    margin-right: 23%;
+    margin-top: 5%;
+  }
+  
+  .topnav2 a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .active {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .topnav2 .icon {
+    display: none;
+  }
+
+  .topnav {
+    display: none;
+  }
+
+  .topnav2.responsive {
+    position: relative;
+  }
+  .topnav2.responsive #longn {
+    position: relative;
+  }
+  .topnav2.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav2.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  #longn {
+    margin-right: 2%;
+  }
+
+  article {
+    width: 90%;
+    padding: 3%;
+    margin-bottom: 4%;
+    margin-left: 2%;
+    float: left;
+    background-color: #66fcf1;
+    border-right: 0px solid black;
+    border-bottom: 3px solid black;
+  } 
+  aside {
+    background-color: #66fcf1;
+    padding: 3%;
+    margin: auto;
+    width: 90%;
+    text-align: center;
+    clear: left;
+  }
+
+  .myPortfolio {
+    margin-top: 10%;
+    text-align: center;
+  }
+
+  .contactname {
+    margin-top: 10%;
+    text-align: center;
+  }
+
+  .contactimg {
+    margin: auto;
+    border-right: 0px solid black;
+    border-bottom: 3px solid black;
+    max-width: 350px;
+  }
+
+  .contact iframe {
+    margin-top: 5%;
+    margin-left: 0;
+    max-width: 100%;
+  }
+
+  form {
+    width: 100%;
+    margin-top: 0;
+    background-color: lightgrey;
+  }
+
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+
+
