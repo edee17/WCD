@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--
+         Muhd Muqtasidin submitform web page
+         Filename: submitform.html
+      
+         Author: Muhd Muqtasidin Bin Ahmad Eunos      
+         Date: 30 July 2018 - 12 August 2018  
+      -->
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Muhd Muqtasidin</title>
+        <meta name="viewport" content="width=device-width, initial-scale = 1" user-scalable=yes>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" media="screen" href="stylesheet.css">
+        <link rel="shortcut icon" href="images/icon_ScG_icon.ico">
+    </head>
+    <body onload="loaderFunction2()">
+        <div id="loader"></div>
+        <div class="bg">
+        <div id="myDiv" class="animate-bottom">
+            <header class="header1">
+                i
+            </header>
+
+                <div class="container" id="containerbg">
+                    <header>
+                        <img src="Images/Logo.png" alt="Logo">
+                        
+                        <div class="topnav" id="myTopnav">
+                            <a href="index.html" class="active">Home</a>
+                            <a href="about.html">About</a>
+                            <a href="portfolio.html">Portfolio</a>
+                            <a href="contact.html">Contact</a>
+                            <a href="javascript:void(0);" class="icon" onclick="myFunction1()">
+                                <i class="fa fa-bars"></i>
+                            </a>
+                        </div>
+
+                        <div class="topnav2" id="myTopnav2">
+                            <a href="index.html" class="active">Home</a>
+                            <a href="about.html">About</a>
+                            <a href="portfolio.html">Portfolio</a>
+                            <a href="contact.html">Contact</a>
+                            <a href="javascript:void(0);" class="icon" onclick="myFunction2()">
+                                <i class="fa fa-bars"></i>
+                            </a>
+                        </div>
+                    </header>
+
+                    <div class="dropdown">
+                        <button onclick="myFunction()" class="sitemap"><i class="down"></i></button>
+                        <div id="mySitemap" class="sitemap-content">
+                            <a href="index.html">Home</a>
+                            <a href="about.html">About</a>
+                            <a href="portfolio.html">Portfolio</a>
+                            <a href="contact.html">Contact</a>
+                        </div>
+                    </div>
+
+                    <div class="buttons">
+                        <p id="smaller-size" class="smaller-size">A</p>
+                        <p id="selected-button" class="selected-button">A</p>
+                        <p id="larger-size" class="larger-size">A</p>
+                    </div>
+                    <div class="myname">
+                        <h1>Muhd Muqtasidin Bin Ahmad Eunos</h1>
+                    </div>
+                        <div class="containerSubmit">
+                            <h2>Your form has been submitted</h2>
+                            <h3>You entered the following data:</h3>
+                            <script>
+                                var formData = location.search;
+                                formData = formData.substring(1, formData.length);
+                                while (formData.indexOf("+") !== -1) {
+                                    formData = formData.replace("+", " ");
+                                }
+                                formData = decodeURIComponent(formData);
+                                var formArray = formData.split("&");
+                                for (var i = 0; i < formArray.length; i = i + 1) {
+                                    document.write("<p> " + formArray[i] + " </p>");
+                                }
+                            </script>
+                        </div>
+                    </article>
+                    <footer>
+                        <p>&copy;Muhd Muqtasidin</p>
+                        <p>Please do visit my social media pages:</p>
+                        <p><a href="https://www.facebook.com/wayne.muqtasidin" target="_blank"><img src="Images/socialmediaicons/fb.png" width="20px" height="20px" alt="Facebook"></a>
+                        <a href="https://twitter.com/muhdmuqtasidin" target="_blank"><img src="Images/socialmediaicons/twitter.png" width="20px" height="20px" alt="Instagram"></a>
+                        <a href="https://www.instagram.com/muhd_muqtasidin/?hl=en" target="_blank"><img src="Images/socialmediaicons/instagram.png" width="20px" height="20px" alt="Twitter"></a></p>
+                    </footer>
+
+                    <script src="buttonscript.js"></script>
+                    <script src="loader.js"></script>
+                    <script src="sitemap.js"></script>
+                    <script src="topNav.js"></script>
+                </div>
+            </div>
+        </div>
+            <!-- <script src="submitform.js"></script> -->
+    </body>
+</html>
